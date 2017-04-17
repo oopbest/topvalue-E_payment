@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <epaysimple_payment_help>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/empty.phtml</template>
+            </action>
+            <action method="setIsHandle">
+                <applied>1</applied>
+            </action>
+        </reference>
+        <reference name="content">
+            <block type="core/template" name="epaysimple.help" template="epaysimple/help.phtml" />
+        </reference>
+    </epaysimple_payment_help>
+    <epaysimple_payment_terms>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/empty.phtml</template>
+            </action>
+            <action method="setIsHandle">
+                <applied>1</applied>
+            </action>
+        </reference>
+        <reference name="content">
+            <block type="core/template" name="epaysimple.terms" template="epaysimple/terms.phtml" />
+        </reference>
+    </epaysimple_payment_terms>
+</layout>
